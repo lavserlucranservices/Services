@@ -1,173 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services - LAVSER LUCRAN CLEANING</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #1a3c6a, #14532d);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      letter-spacing: 1px;
-    }
-    nav {
-      background: #14532d;
-      padding: 15px 0;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #a0d0c0;
-    }
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h2 {
-      font-size: 2.5em;
-      color: #1a3c6a;
-      margin-bottom: 10px;
-    }
-    .service-boxes {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-    .service-box {
-      background: linear-gradient(135deg, #3498db, #1abc9c);
-      padding: 25px;
-      margin: 15px;
-      border-radius: 12px;
-      width: 280px;
-      min-height: 180px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-      color: white;
-      font-size: 1.1em;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-    footer {
-      background: #1a3c6a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-    footer a {
-      color: #a0d0c0;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    footer a:hover {
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES</h1>
-    <p>Your Trusted Partner in Creating Clean, Inviting Spaces</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Discover the services we offer to help your business grow and succeed.</p>
+        </div>
+    </header>
 
-  <main>
-    <h2>Our Services</h2>
-    <p>At Lavser Lucran Cleaning, we offer a comprehensive range of cleaning services tailored to meet your needs. Whether you’re looking for home cleaning or commercial space maintenance, we have you covered. Here’s a look at some of the services we provide:</p>
+    <!-- Services List -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Core Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>We build responsive, user-friendly websites tailored to your business needs. Our websites are fast, reliable, and easy to navigate.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO Optimization</h3>
+                    <p>Improve your search engine ranking with our advanced SEO techniques. We help you drive more organic traffic to your site.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Marketing</h3>
+                    <p>Our digital marketing strategies are designed to help you reach the right audience and increase your online sales and conversions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Graphic Design</h3>
+                    <p>Our design team creates stunning visual elements for your brand, including logos, banners, and other marketing materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="service-boxes">
-      <!-- Service 1 -->
-      <div class="service-box">
-        <h3>Guestroom Deep Cleaning</h3>
-        <p>Our expert team will ensure your guestroom is spotless, fresh, and welcoming with every visit.</p>
-      </div>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"The team at XYZ Company delivered an amazing website that perfectly matches our brand vision. We saw an immediate boost in traffic!"</p>
+                    <cite>- Jane Doe, CEO of BusinessX</cite>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Our search rankings improved significantly after working with this team. Their SEO services are top-notch!"</p>
+                    <cite>- John Smith, Marketing Director at TechCo</cite>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Service 2 -->
-      <div class="service-box">
-        <h3>Shops Deep Cleaning</h3>
-        <p>We offer cleaning for retail spaces that leaves a lasting impression on your customers.</p>
-      </div>
+    <!-- Pricing Plans -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Our Pricing Plans</h2>
+            <div class="pricing-plans">
+                <div class="pricing-plan">
+                    <h3>Basic Plan</h3>
+                    <p>$99/month</p>
+                    <ul>
+                        <li>1 Website</li>
+                        <li>Basic SEO</li>
+                        <li>Email Support</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Pro Plan</h3>
+                    <p>$249/month</p>
+                    <ul>
+                        <li>Up to 5 Websites</li>
+                        <li>Advanced SEO</li>
+                        <li>Priority Support</li>
+                    </ul>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Enterprise Plan</h3>
+                    <p>$499/month</p>
+                    <ul>
+                        <li>Unlimited Websites</li>
+                        <li>Full SEO Optimization</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Service 3 -->
-      <div class="service-box">
-        <h3>Office Deep Cleaning</h3>
-        <p>Professional office cleaning to ensure your workplace is productive, hygienic, and inviting.</p>
-      </div>
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Get Started Today!</h2>
+            <p>Ready to grow your business with our professional services? Contact us now to get a free consultation!</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
 
-      <!-- Service 4 -->
-      <div class="service-box">
-        <h3>Villa Deep Cleaning</h3>
-        <p>Luxury cleaning services for your villa to ensure every corner is gleaming and fresh.</p>
-      </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
 
-      <!-- Service 5 -->
-      <div class="service-box">
-        <h3>Supermarket Cleaning</h3>
-        <p>Ensure your supermarket meets high hygiene standards with our specialized deep cleaning services.</p>
-      </div>
-
-      <!-- Service 6 -->
-      <div class="service-box">
-        <h3>Carpet & Upholstery Shampooing</h3>
-        <p>We offer deep cleaning and shampooing of carpets and upholstery to restore freshness and shine.</p>
-      </div>
-
-      <!-- Service 7 -->
-      <div class="service-box">
-        <h3>Marble Floor Polishing</h3>
-        <p>Enhance the beauty and longevity of your marble floors with our professional polishing services.</p>
-      </div>
-
-      <!-- Service 8 -->
-      <div class="service-box">
-        <h3>Glass Cleaning (Low Level)</h3>
-        <p>We provide expert glass cleaning services for windows, doors, and glass partitions at any height.</p>
-      </div>
-
-      <!-- Service 9 -->
-      <div class="service-box">
-        <h3>Housekeeping Services</h3>
-        <p>We offer a variety of housekeeping services to make your home or business run smoothly.</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES | All Rights Reserved</p>
-    <p>Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.</p>
-  </footer>
 </body>
 </html>
