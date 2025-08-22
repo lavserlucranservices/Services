@@ -3,33 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Lavserlucran</title>
+  <title>LAVSER LUCRAN CLEANING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: linear-gradient(to right, #004080, #006400); color: white; padding: 15px; text-align: center; }
-    nav { background: #333; text-align: center; padding: 10px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #4CAF50; }
-    main { padding: 20px; }
-    footer { background: #004080; color: white; text-align: center; padding: 10px 0; margin-top: 20px; }
+    /* Your existing styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #1a3c6a, #14532d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 1px;
+      font-family: 'Poppins', sans-serif;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    nav {
+      background: #14532d;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #a0d0c0;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: #1a3c6a;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 1.8em;
+      color: #14532d;
+      margin-top: 30px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .about-section, .mission-vision {
+      background-color: #fff;
+      margin: 30px 0;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .about-section h3, .mission-vision h3 {
+      color: #1a3c6a;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2em;
+    }
+    .about-section p, .mission-vision p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    .service-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+    }
+    .service-box div {
+      background: linear-gradient(135deg, #3498db, #1abc9c);
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      min-height: 180px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      color: white;
+      font-size: 1.1em;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-box div:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .contact-info {
+      margin: 50px auto;
+      max-width: 700px;
+      background: white;
+      border-left: 8px solid #1a3c6a;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    .contact-info h3 {
+      margin-top: 0;
+      font-size: 1.8em;
+      color: #14532d;
+    }
+    .contact-item {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+    }
+    .contact-item span {
+      font-weight: bold;
+      color: #1a3c6a;
+      min-width: 90px;
+      display: inline-block;
+    }
+    .contact-item a {
+      color: #14532d;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-item a:hover {
+      color: #3498db;
+    }
+    footer {
+      background: #1a3c6a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: #a0d0c0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .service-box div {
+        width: 45%;
+      }
+      nav a {
+        font-size: 1em;
+        margin: 0 10px;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
+    }
+    @media (max-width: 480px) {
+      .service-box div {
+        width: 100%;
+      }
+      nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
 <body>
-<header>
-  <h1>About Us</h1>
-</header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<main>
-  <h2>Who We Are</h2>
-  <p>Lavserlucran Services is a UAE-based company dedicated to delivering quality and reliable services tailored to meet client needs.</p>
-</main>
-<footer>
-  <p>&copy; 2025 Lavserlucran Services. All rights reserved.</p>
-</footer>
-</body>
-</html>
+  <header>
+    <h1>LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES</h1>
+    <p>Providing Quality Cleaning Solutions for Homes & Businesses</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <h3>About Us</h3>
+    <p>Lavser Lucran Cleaning and Hospitality Services is a reliable provider of exceptional cleaning solutions for homes and businesses across Abu Dhabi. We believe that every environment deserves a pristine, welcoming atmosphere that enhances productivity and comfort. Our team is passionate about providing superior services, and we utilize eco-friendly methods to ensure cleanliness without compromising on the environment. We are committed to fostering long-lasting relationships with our clients through trust, excellence, and attention to detail.</p>
+  </section>
+
+  <!-- Mission and Vision Section -->
+  <section class="mission-vision">
+    <h3>Our Mission</h3>
+    <p>Our mission is to deliver dependable, eco-conscious cleaning solutions that consistently exceed expectations. By nurturing a dedicated team and embracing continuous growth, we aim to bring lasting cleanliness, joy, and trust into every environment we touch.</p>
+
+    <h3>Our Vision</h3>
+    <p>To become Abu Dhabi’s most trusted cleaning service — creating spaces that uplift lives through care, quality, and innovation. We envision a city where every home and workplace shines with cleanliness, comfort, and peace of mind.</p>
+  </section>
+
+  <main>
+    <h2>Welcome to Lavser Lucran Cleaning</h2>
+    <p>We offer professional cleaning services to keep your space fresh, clean, and inviting.</p>
+    <h3>Our Services</h3>
+    <div class="service-box">
+      <!-- Service boxes here... -->
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <div class="contact-item"><span>Phone:</span> 0563197583 / 0529345738</div>
+      <div class="contact-item"><span>Email:</span> <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a></div>
+      <div class="contact-item"><span>Address:</span> AL BAYADA PROPERTIES, 12th Floor, AL Salam Tower, Office Number 1228, P.O Box 3113, Abu Dhabi, UAE</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES | All Rights Reserved</p>
+    <p>Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.</p>
+ 
