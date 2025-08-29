@@ -8,6 +8,10 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -63,6 +67,19 @@
       color: #14532d;
       margin-top: 30px;
       font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      animation: fadeInDown 1s ease forwards;
+    }
+    p {
+      animation: fadeInUp 1s ease forwards;
+      max-width: 900px;
+      margin: 10px auto 30px;
+      color: #555;
+      font-size: 1.2em;
+      text-align: left;
     }
     .about-section,
     .mission-vision {
@@ -73,27 +90,6 @@
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
       max-width: 900px;
       text-align: left;
-
-      /* animation */
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .about-section.visible,
-    .mission-vision.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .about-section h3,
-    .mission-vision h3 {
-      color: #1a3c6a;
-      font-family: 'Poppins', sans-serif;
-      font-size: 2em;
-    }
-    .about-section p,
-    .mission-vision p {
-      font-size: 1.2em;
-      color: #555;
     }
     footer {
       background: #1a3c6a;
@@ -113,6 +109,28 @@
     footer a:hover {
       color: white;
     }
+
+    /* Animation Keyframes */
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
@@ -127,65 +145,40 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- About Us Section -->
-  <section class="about-section">
-    <h3>About Us</h3>
-    <p>
-      Lavser Lucran Cleaning and Hospitality Services is a reliable provider of exceptional cleaning
-      solutions for homes and businesses across Abu Dhabi. We believe that every environment deserves
-      a pristine, welcoming atmosphere that enhances productivity and comfort. Our team is passionate
-      about providing superior services, and we utilize eco-friendly methods to ensure cleanliness
-      without compromising on the environment. We are committed to fostering long-lasting relationships
-      with our clients through trust, excellence, and attention to detail.
-    </p>
-  </section>
+  <main>
+    <!-- About Us Section -->
+    <section class="about-section">
+      <h3>
+        <i class="fas fa-info-circle" style="color:#1a3c6a"></i> About Us
+      </h3>
+      <p>
+        Lavser Lucran Cleaning and Hospitality Services is a reliable provider of exceptional cleaning solutions for homes and businesses across Abu Dhabi. We believe that every environment deserves a pristine, welcoming atmosphere that enhances productivity and comfort. Our team is passionate about providing superior services, and we utilize eco-friendly methods to ensure cleanliness without compromising on the environment. We are committed to fostering long-lasting relationships with our clients through trust, excellence, and attention to detail.
+      </p>
+    </section>
 
-  <!-- Mission and Vision Section -->
-  <section class="mission-vision">
-    <h3>Our Mission</h3>
-    <p>
-      Our mission is to deliver dependable, eco-conscious cleaning solutions that consistently exceed
-      expectations. By nurturing a dedicated team and embracing continuous growth, we aim to bring
-      lasting cleanliness, joy, and trust into every environment we touch.
-    </p>
+    <!-- Mission and Vision Section -->
+    <section class="mission-vision">
+      <h3>
+        <i class="fas fa-bullseye" style="color:#1a3c6a"></i> Our Mission
+      </h3>
+      <p>
+        Our mission is to deliver dependable, eco-conscious cleaning solutions that consistently exceed expectations. By nurturing a dedicated team and embracing continuous growth, we aim to bring lasting cleanliness, joy, and trust into every environment we touch.
+      </p>
 
-    <h3>Our Vision</h3>
-    <p>
-      To become Abu Dhabi’s most trusted cleaning service — creating spaces that uplift lives through
-      care, quality, and innovation. We envision a city where every home and workplace shines with
-      cleanliness, comfort, and peace of mind.
-    </p>
-  </section>
+      <h3>
+        <i class="fas fa-eye" style="color:#1a3c6a"></i> Our Vision
+      </h3>
+      <p>
+        To become Abu Dhabi’s most trusted cleaning service — creating spaces that uplift lives through care, quality, and innovation. We envision a city where every home and workplace shines with cleanliness, comfort, and peace of mind.
+      </p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES | All Rights Reserved</p>
-    <p>Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.</p>
+    <p>
+      Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.
+    </p>
   </footer>
-
-  <script>
-    // Simple scroll fade-in animation using IntersectionObserver
-    document.addEventListener('DOMContentLoaded', () => {
-      const sections = document.querySelectorAll('.about-section, .mission-vision');
-
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1,
-      };
-
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-    });
-  </script>
 </body>
 </html>
