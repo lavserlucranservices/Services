@@ -1,28 +1,20 @@
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* --- Header Logo & Text Layout --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space sa pagitan ng logo at text */
 }
 
-/* WhatsApp Floating Button */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;  /* Adjust distance from the bottom */
-    right: 25px;   /* Adjust distance from the right */
-    z-index: 1000; /* Ensure it stays on top */
+.logo-container img {
+  max-width: 100px; /* laki ng logo */
+  height: auto;
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background: white; /* para lutang kung dark ang background */
+  padding: 5px;
 }
 
-.whatsapp-float img {
-    width: 60px;  /* Set the width of the WhatsApp logo */
-    height: 60px; /* Set the height of the WhatsApp logo */
-    border-radius: 50%;  /* Optional: gives it a circular appearance */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better visibility */
-}
-
-.whatsapp-float a {
-    display: block;
+.header-text {
+  text-align: left;
 }
