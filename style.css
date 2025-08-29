@@ -13,10 +13,10 @@ header {
 }
 
 .logo img {
-  width: 120px; /* sakto lang laki */
+  width: 150px;  /* pwede mo baguhin (120px, 180px, etc.) */
   height: auto;
   display: block;
-  margin: 0 auto 10px auto; /* centered with spacing below */
+  margin: 0 auto 15px auto; /* gitna at may space sa baba */
 }
 
 nav {
