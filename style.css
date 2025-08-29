@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -7,16 +7,27 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background: linear-gradient(135deg, #1a3c6a, #14532d);
   color: white;
   padding: 40px 20px;
   text-align: center;
+  position: relative;
+}
+
+header .logo {
+  width: 90px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.8em;
+  font-size: 3em;
+  letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -26,6 +37,7 @@ header p {
   opacity: 0.9;
 }
 
+/* Navigation */
 nav {
   background: #14532d;
   padding: 15px 0;
@@ -45,6 +57,7 @@ nav a:hover {
   color: #a0d0c0;
 }
 
+/* Main Content */
 main {
   padding: 40px 20px;
   text-align: center;
@@ -63,6 +76,7 @@ h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Service Boxes */
 .service-box {
   display: flex;
   justify-content: center;
@@ -86,115 +100,4 @@ h3 {
 
 .service-box div:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.contact-info {
-  margin: 50px auto;
-  max-width: 700px;
-  background: white;
-  border-left: 8px solid #1a3c6a;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.contact-info h3 {
-  margin-top: 0;
-  font-size: 1.8em;
-  color: #14532d;
-}
-
-.contact-item {
-  margin: 15px 0;
-  display: flex;
-  align-items: center;
-  font-size: 1.1em;
-}
-
-.contact-item span {
-  font-weight: bold;
-  color: #1a3c6a;
-  min-width: 90px;
-  display: inline-block;
-}
-
-.contact-item a {
-  color: #14532d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-item a:hover {
-  color: #3498db;
-}
-
-footer {
-  background: #1a3c6a;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-footer a {
-  color: #a0d0c0;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: white;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25d366;
-  color: #fff;
-  padding: 14px 22px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  font-weight: bold;
-  font-size: 1em;
-  z-index: 1000;
-}
-
-.whatsapp-button:hover {
-  background: #1ebc57;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .service-box div {
-    width: 45%;
-  }
-  nav a {
-    font-size: 1em;
-    margin: 0 10px;
-  }
-  header h1 {
-    font-size: 2.2em;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-box div {
-    width: 100%;
-  }
-  nav a {
-    font-size: 0.9em;
-    margin: 0 5px;
-  }
-  header h1 {
-    font-size: 1.8em;
-  }
-}
+  box-shadow: 0 10px 25
