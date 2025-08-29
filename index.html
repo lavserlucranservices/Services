@@ -227,63 +227,52 @@
     </nav>
 
     <main>
-      <h2 data-aos="fade-up">Welcome to LavserLucran Cleaning & Hospitality Services</h2>
-      <p data-aos="fade-up" data-aos-delay="100">We offer professional cleaning services to keep your space fresh, clean, and inviting.</p>
+ 
+  <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
 
-      <h3 data-aos="fade-up" data-aos-delay="200">Our Services</h3>
+  </div>
 
-      <div class="service-box">
-        <div data-aos="fade-up" data-aos-delay="100">
-          <h4>Guestroom Deep Cleaning</h4>
-          <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="200">
-          <h4>Shops Deep Cleaning</h4>
-          <p>We offer comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="300">
-          <h4>Offices Deep Cleaning</h4>
-          <p>Maintain a clean and professional workspace with our office cleaning services.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="400">
-          <h4>Villa Deep Cleaning</h4>
-          <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="500">
-          <h4>Supermarket Deep Cleaning</h4>
-          <p>Ensure hygiene and cleanliness in your supermarket with our specialized cleaning services.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="600">
-          <h4>Carpet & Upholstery Shampooing</h4>
-          <p>Revive your carpets and upholstery with our deep cleaning and shampooing services.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="700">
-          <h4>Marble Floor Polishing</h4>
-          <p>Enhance the shine of your marble floors with our polishing services.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="800">
-          <h4>Glass Cleaning (Low Level)</h4>
-          <p>We provide expert glass cleaning services, including windows, doors, and more.</p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="900">
-          <h4>Housekeeping Services</h4>
-          <p>We offer a variety of housekeeping services tailored to your needs.</p>
-        </div>
-      </div>
+  
+  <section id="service-request" style="max-width:600px; margin: 50px auto; padding: 20px; background: #fff; border-radius: 12px; box-shadow: 0 6px 14px rgba(0,0,0,0.1);" data-aos="fade-up">
+    <h3 style="color: #14532d; font-family: 'Poppins', sans-serif; text-align:center;">Request a Service</h3>
+    <form id="serviceForm" style="display:flex; flex-direction: column; gap: 15px;">
+      <label for="name" style="font-weight:bold; color:#1a3c6a;">Full Name:</label>
+      <input type="text" id="name" name="name" required style="padding:10px; border-radius:6px; border: 1px solid #ccc;">
 
-      <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
-        <h3>Contact Information</h3>
-        <div class="contact-item">
-          <span>Phone</span> 0563197583 / 0529345738
-        </div>
-        <div class="contact-item">
-          <span>Email</span> <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <span>Address</span> Dar Al Salam Building, Al Marakib Street, P.O Box 3113, Abu Dhabi, UAE
-        </div>
-      </div>
-    </main>
+      <label for="email" style="font-weight:bold; color:#1a3c6a;">Email Address:</label>
+      <input type="email" id="email" name="email" required style="padding:10px; border-radius:6px; border: 1px solid #ccc;">
+
+      <label for="phone" style="font-weight:bold; color:#1a3c6a;">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required style="padding:10px; border-radius:6px; border: 1px solid #ccc;">
+
+      <label for="service" style="font-weight:bold; color:#1a3c6a;">Select Service:</label>
+      <select id="service" name="service" required style="padding:10px; border-radius:6px; border: 1px solid #ccc;">
+        <option value="" disabled selected>Select a service</option>
+        <option value="guestroom">Guestroom Deep Cleaning</option>
+        <option value="shops">Shops Deep Cleaning</option>
+        <option value="offices">Offices Deep Cleaning</option>
+        <option value="villa">Villa Deep Cleaning</option>
+        <option value="supermarket">Supermarket Deep Cleaning</option>
+        <option value="carpet">Carpet & Upholstery Shampooing</option>
+        <option value="marble">Marble Floor Polishing</option>
+        <option value="glass">Glass Cleaning (Low Level)</option>
+        <option value="housekeeping">Housekeeping Services</option>
+        <option value="air-duct">Air Duct and Ventilation Cleaning</option>
+        <option value="hvac">Disinfection of HVAC Systems</option>
+        <option value="respiratory-equipment">Respiratory Equipment Sanitization</option>
+        <option value="mold-removal">Mold and Mildew Removal</option>
+      </select>
+
+      <label for="details" style="font-weight:bold; color:#1a3c6a;">Additional Details:</label>
+      <textarea id="details" name="details" rows="4" placeholder="Write any specific requests or questions here..." style="padding:10px; border-radius:6px; border: 1px solid #ccc;"></textarea>
+
+      <button type="submit" style="background: #14532d; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: background 0.3s ease;">Submit Request</button>
+    </form>
+  </section>
+
+</main>
+
+
 
     <footer>
       <p>&copy; 2025 LAVSERLUCRAN CLEANING AND HOSPITALITY SERVICES L.L.C</p>
