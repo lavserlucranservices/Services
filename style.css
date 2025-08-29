@@ -1,95 +1,15 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #f7f9fc;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background: #004080;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
 .logo-container {
   display: flex;
-  flex-direction: column; /* stacked: logo sa taas, text sa baba */
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .logo-container img {
-  width: 180px;  /* mas malaki logo */
+  width: 120px;  /* sakto laki */
   height: auto;
 }
 
-/* Navigation */
-nav {
-  background: #0066cc;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 15px;
-  display: inline-block;
-  transition: background 0.3s ease;
-}
-
-nav ul li a:hover {
-  background: #004080;
-  border-radius: 6px;
-}
-
-/* Main */
-main {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-main h2 {
-  margin-bottom: 15px;
-  color: #004080;
-}
-
-main p, main ul {
-  margin-bottom: 25px;
-  font-size: 1.1rem;
-}
-
-main ul li {
-  margin-bottom: 8px;
-}
-
-/* Footer */
-footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  font-size: 0.9rem;
+.header-text {
+  text-align: left;
 }
