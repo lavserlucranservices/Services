@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet"
   />
-  <!-- Font Awesome CDN for icons -->
+  <!-- Font Awesome CSS for icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,8 +16,6 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -97,11 +95,15 @@
       transform: translateY(-8px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
-    .service-box h4 i {
-      margin-right: 10px;
-      color: #e0f7f1;
-      font-size: 1.3em;
-      vertical-align: middle;
+    .service-box h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: 'Poppins', sans-serif;
     }
     .contact-info {
       margin: 50px auto;
@@ -194,55 +196,54 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <h2 data-aos="fade-down">Welcome to LavserLucran Cleaning & Hospitality Services</h2>
-    <p data-aos="fade-up" data-aos-delay="200">
-      We offer professional cleaning services to keep your space fresh, clean, and inviting.
-    </p>
-    <h3 data-aos="fade-right" data-aos-delay="400">Our Services</h3>
+    <h2>Welcome to LavserLucran Cleaning & Hospitality Services</h2>
+    <p>We offer professional cleaning services to keep your space fresh, clean, and inviting.</p>
+    <h3>Our Services</h3>
     <div class="service-box">
-      <div data-aos="fade-up" data-aos-delay="300">
-        <h4><i class="fas fa-bed"></i> Guestroom Deep Cleaning</h4>
+      <div>
+        <h4><i class="fa-solid fa-bed"></i> Guestroom Deep Cleaning</h4>
         <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="400">
-        <h4><i class="fas fa-store"></i> Shops Deep Cleaning</h4>
+      <div>
+        <h4><i class="fa-solid fa-shop"></i> Shops Deep Cleaning</h4>
         <p>We offer comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="500">
-        <h4><i class="fas fa-building"></i> Offices Deep Cleaning</h4>
+      <div>
+        <h4><i class="fa-solid fa-building"></i> Offices Deep Cleaning</h4>
         <p>Maintain a clean and professional workspace with our office cleaning services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="600">
-        <h4><i class="fas fa-home"></i> Villa Deep Cleaning</h4>
+      <div>
+        <h4><i class="fa-solid fa-house"></i> Villa Deep Cleaning</h4>
         <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="700">
-        <h4><i class="fas fa-shopping-cart"></i> Supermarket Deep Cleaning</h4>
+      <div>
+        <h4><i class="fa-solid fa-cart-shopping"></i> Supermarket Deep Cleaning</h4>
         <p>Ensure hygiene and cleanliness in your supermarket with our specialized cleaning services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="800">
-        <h4><i class="fas fa-couch"></i> Carpet & Upholstery Shampooing</h4>
+      <div>
+        <h4><i class="fa-solid fa-couch"></i> Carpet & Upholstery Shampooing</h4>
         <p>Revive your carpets and upholstery with our deep cleaning and shampooing services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="900">
-        <h4><i class="fas fa-swatchbook"></i> Marble Floor Polishing</h4>
+      <div>
+        <h4><i class="fa-solid fa-gem"></i> Marble Floor Polishing</h4>
         <p>Enhance the shine of your marble floors with our polishing services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="1000">
-        <h4><i class="fas fa-window-maximize"></i> Glass Cleaning (Low Level)</h4>
+      <div>
+        <h4><i class="fa-solid fa-window-maximize"></i> Glass Cleaning (Low Level)</h4>
         <p>We provide expert glass cleaning services, including windows, doors, and more.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="1100">
-        <h4><i class="fas fa-broom"></i> Housekeeping Services</h4>
+      <div>
+        <h4><i class="fa-solid fa-broom"></i> Housekeeping Services</h4>
         <p>We offer a variety of housekeeping services tailored to your needs.</p>
       </div>
     </div>
-    <div class="contact-info" data-aos="fade-left" data-aos-delay="1200">
+    <div class="contact-info">
       <h3>Contact Information</h3>
-      <div class="contact-item"><span>Phone</span> 0563197583 / 0529345738</div>
       <div class="contact-item">
-        <span>Email</span>
-        <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a>
+        <span>Phone</span> 0563197583 / 0529345738
+      </div>
+      <div class="contact-item">
+        <span>Email</span> <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a>
       </div>
       <div class="contact-item">
         <span>Address</span> Dar Al Salam Building, Al Marakib Street, P.O Box 3113, Abu Dhabi, UAE
@@ -257,31 +258,10 @@
   <a
     href="https://wa.me/971563197583"
     target="_blank"
-    style="
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 22px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      font-weight: bold;
-      font-size: 1em;
-      z-index: 1000;
-    "
+    style="position:fixed;bottom:25px;right:25px;background:#25d366;color:#fff;padding:14px 22px;
+           border-radius:50px;text-decoration:none;box-shadow:0 2px 5px rgba(0,0,0,0.2);
+           font-weight:bold;font-size:1em;z-index:1000;"
+    >Chat with us on WhatsApp</a
   >
-    Chat with us on WhatsApp
-  </a>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  </script>
 </body>
 </html>
