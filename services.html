@@ -1,193 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LAVSER LUCRAN CLEANING SERVICES</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1a3c6a, #14532d);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 3em;
-      letter-spacing: 1px;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-      background: #14532d;
-      padding: 15px 0;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-size: 1.1em;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .service-box {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .service-box div {
-      background: linear-gradient(135deg, #3498db, #1abc9c);
-      padding: 25px;
-      border-radius: 12px;
-      width: 280px;
-      min-height: 180px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-      color: white;
-      font-size: 1.1em;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .service-box div:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    .request-form {
-      background: white;
-      padding: 30px;
-      margin-top: 50px;
-      border-radius: 12px;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-      width: 80%;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .request-form input, .request-form select, .request-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-    }
-
-    .request-form button {
-      background-color: #1a3c6a;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .request-form button:hover {
-      background-color: #14532d;
-    }
-
-    footer {
-      background: #1a3c6a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES L.L.C</h1>
-    <p>Providing Quality Cleaning Solutions for Homes & Businesses</p>
-  </header>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <main>
-    <h2 data-aos="fade-up">Our Cleaning Services</h2>
-    <p data-aos="fade-up" data-aos-delay="100">We offer professional cleaning services to keep your space fresh, clean, and inviting.</p>
-
-    <div class="service-box">
-      <div data-aos="fade-up" data-aos-delay="200">
-        <h4>Guestroom Deep Cleaning</h4>
-        <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="300">
-        <h4>Shops Deep Cleaning</h4>
-        <p>We offer comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="400">
-        <h4>Offices Deep Cleaning</h4>
-        <p>Maintain a clean and professional workspace with our office cleaning services.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="500">
-        <h4>Villa Deep Cleaning</h4>
-        <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
-      </div>
-    </div>
-
-    <!-- Request Service Form -->
-    <div class="request-form" data-aos="fade-up" data-aos-delay="600">
-      <h3>Request a Service</h3>
-      <form action="submit_form.php" method="POST">
-        <input type="text" name="name" placeholder="Your Full Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <select name="service" required>
-          <option value="">Select Service</option>
-          <option value="Guestroom Deep Cleaning">Guestroom Deep Cleaning</option>
-          <option value="Shops Deep Cleaning">Shops Deep Cleaning</option>
-          <option value="Offices Deep Cleaning">Offices Deep Cleaning</option>
-          <option value="Villa Deep Cleaning">Villa Deep Cleaning</option>
-        </select>
-        <textarea name="message" rows="4" placeholder="Additional Details (optional)"></textarea>
-        <button type="submit">Submit Request</button>
-      </form>
-    </div>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES L.L.C</p>
-  </footer>
-
-  <!-- AOS Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-
-</body>
-</html>
-
+<div class="service-box">
+  <div data-aos="fade-up" data-aos-delay="200">
+    <img src="icons/guestroom.png" alt="Guestroom Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Guestroom Deep Cleaning</h4>
+    <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="300">
+    <img src="icons/shop.png" alt="Shop Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Shops Deep Cleaning</h4>
+    <p>Comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="400">
+    <img src="icons/office.png" alt="Office Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Offices Deep Cleaning</h4>
+    <p>Maintain a clean and professional workspace with our office cleaning services.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="500">
+    <img src="icons/villa.png" alt="Villa Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Villa Deep Cleaning</h4>
+    <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="600">
+    <img src="icons/supermarket.png" alt="Supermarket Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Supermarket Deep Cleaning</h4>
+    <p>Ensure hygiene and cleanliness in your supermarket with specialized cleaning services.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="700">
+    <img src="icons/carpet.png" alt="Carpet Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Carpet & Upholstery Shampooing</h4>
+    <p>Revive your carpets and upholstery with deep cleaning and shampooing services.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="800">
+    <img src="icons/marble.png" alt="Marble Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Marble Floor Polishing</h4>
+    <p>Enhance the shine of your marble floors with our polishing services.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="900">
+    <img src="icons/glass.png" alt="Glass Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Glass Cleaning (Low Level)</h4>
+    <p>Expert glass cleaning services including windows, doors, and more.</p>
+  </div>
+  <div data-aos="fade-up" data-aos-delay="1000">
+    <img src="icons/housekeeping.png" alt="Housekeeping Icon" style="width:50px; margin-bottom:15px;">
+    <h4>Housekeeping Services</h4>
+    <p>Variety of housekeeping services tailored to your needs.</p>
+  </div>
+</div>
