@@ -1,9 +1,9 @@
-/* --- General Reset --- */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Header --- */
+/* Header */
 header {
   background: #004080;
   color: white;
@@ -22,37 +22,18 @@ header {
 
 .logo-container {
   display: flex;
+  flex-direction: column; /* stacked: logo sa taas, text sa baba */
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* responsive */
+  gap: 15px;
 }
 
 .logo-container img {
-  max-width: 100px;
+  width: 180px;  /* mas malaki logo */
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  background: white;
-  padding: 5px;
 }
 
-.header-text {
-  text-align: left;
-  max-width: 800px;
-}
-
-header h1 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-header p {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* --- Navigation --- */
+/* Navigation */
 nav {
   background: #0066cc;
 }
@@ -82,7 +63,7 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 
-/* --- Main Content --- */
+/* Main */
 main {
   padding: 40px 20px;
   max-width: 1000px;
@@ -103,7 +84,7 @@ main ul li {
   margin-bottom: 8px;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
   background: #004080;
   color: white;
