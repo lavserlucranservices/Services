@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LAVSER LUCRAN CLEANING</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papV+eHaVRO5Yn4fWmvGnTH+NqPLDDkON2rg2rHnL3+ax8Q6uElGYDZ9vxhfOw1zNp5K6vTvvwP4kIKmC6+b9g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     body {
@@ -13,36 +25,29 @@
       padding: 0;
       background-color: #f4f4f9;
       color: #333;
-      scroll-behavior: smooth;
     }
-
     header {
       background: linear-gradient(135deg, #1a3c6a, #14532d);
       color: white;
       padding: 40px 20px;
       text-align: center;
-      animation: fadeInDown 1.5s ease-in-out;
     }
-
     header h1 {
       margin: 0;
       font-size: 3em;
       letter-spacing: 1px;
       font-family: 'Poppins', sans-serif;
     }
-
     header p {
       margin: 10px 0 0;
       font-size: 1.2em;
       opacity: 0.9;
     }
-
     nav {
       background: #14532d;
       padding: 15px 0;
       text-align: center;
     }
-
     nav a {
       color: white;
       margin: 0 20px;
@@ -51,29 +56,24 @@
       font-weight: bold;
       transition: color 0.3s ease;
     }
-
     nav a:hover {
       color: #a0d0c0;
     }
-
     main {
       padding: 40px 20px;
       text-align: center;
     }
-
     h2 {
       font-size: 2.5em;
       color: #1a3c6a;
       margin-bottom: 10px;
     }
-
     h3 {
       font-size: 1.8em;
       color: #14532d;
       margin-top: 30px;
       font-family: 'Poppins', sans-serif;
     }
-
     .service-box {
       display: flex;
       justify-content: center;
@@ -81,7 +81,6 @@
       margin-top: 30px;
       gap: 30px;
     }
-
     .service-box div {
       background: linear-gradient(135deg, #3498db, #1abc9c);
       padding: 25px;
@@ -94,12 +93,16 @@
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .service-box div:hover {
       transform: translateY(-8px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
-
+    .service-box h4 i {
+      margin-right: 10px;
+      color: #e0f7f1;
+      font-size: 1.3em;
+      vertical-align: middle;
+    }
     .contact-info {
       margin: 50px auto;
       max-width: 700px;
@@ -110,31 +113,31 @@
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
       text-align: left;
     }
-
+    .contact-info h3 {
+      margin-top: 0;
+      font-size: 1.8em;
+      color: #14532d;
+    }
     .contact-item {
       margin: 15px 0;
       display: flex;
       align-items: center;
       font-size: 1.1em;
     }
-
     .contact-item span {
       font-weight: bold;
       color: #1a3c6a;
       min-width: 90px;
       display: inline-block;
     }
-
     .contact-item a {
       color: #14532d;
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     .contact-item a:hover {
       color: #3498db;
     }
-
     footer {
       background: #1a3c6a;
       color: white;
@@ -142,52 +145,40 @@
       padding: 20px;
       margin-top: 40px;
     }
-
+    footer p {
+      margin: 5px 0;
+    }
     footer a {
       color: #a0d0c0;
       text-decoration: none;
       transition: color 0.3s ease;
     }
-
     footer a:hover {
       color: white;
     }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 22px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      font-weight: bold;
-      font-size: 1em;
-      z-index: 1000;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     @media (max-width: 768px) {
-      .service-box div { width: 45%; }
+      .service-box div {
+        width: 45%;
+      }
+      nav a {
+        font-size: 1em;
+        margin: 0 10px;
+      }
+      header h1 {
+        font-size: 2.5em;
+      }
     }
-
     @media (max-width: 480px) {
-      .service-box div { width: 100%; }
-      nav a { font-size: 0.9em; margin: 0 5px; }
-      header h1 { font-size: 2em; }
+      .service-box div {
+        width: 100%;
+      }
+      nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
@@ -196,78 +187,101 @@
     <h1>LAVSERLUCRAN CLEANING AND HOSPITALITY SERVICES L.L.C - S.P.C</h1>
     <p>Providing Quality Cleaning Solutions for Homes & Businesses</p>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
-
   <main>
-    <h2 data-aos="fade-up">Welcome to LavserLucran Cleaning & Hospitality Services</h2>
-    <p data-aos="fade-up" data-aos-delay="100">We offer professional cleaning services to keep your space fresh, clean, and inviting.</p>
-
-    <h3 data-aos="fade-up" data-aos-delay="200">Our Services</h3>
+    <h2 data-aos="fade-down">Welcome to LavserLucran Cleaning & Hospitality Services</h2>
+    <p data-aos="fade-up" data-aos-delay="200">
+      We offer professional cleaning services to keep your space fresh, clean, and inviting.
+    </p>
+    <h3 data-aos="fade-right" data-aos-delay="400">Our Services</h3>
     <div class="service-box">
-      <div data-aos="fade-up" data-aos-delay="100">
-        <h4>Guestroom Deep Cleaning</h4>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h4><i class="fas fa-bed"></i> Guestroom Deep Cleaning</h4>
         <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="200">
-        <h4>Shops Deep Cleaning</h4>
+      <div data-aos="fade-up" data-aos-delay="400">
+        <h4><i class="fas fa-store"></i> Shops Deep Cleaning</h4>
         <p>We offer comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="300">
-        <h4>Offices Deep Cleaning</h4>
+      <div data-aos="fade-up" data-aos-delay="500">
+        <h4><i class="fas fa-building"></i> Offices Deep Cleaning</h4>
         <p>Maintain a clean and professional workspace with our office cleaning services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="400">
-        <h4>Villa Deep Cleaning</h4>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <h4><i class="fas fa-home"></i> Villa Deep Cleaning</h4>
         <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="500">
-        <h4>Supermarket Deep Cleaning</h4>
+      <div data-aos="fade-up" data-aos-delay="700">
+        <h4><i class="fas fa-shopping-cart"></i> Supermarket Deep Cleaning</h4>
         <p>Ensure hygiene and cleanliness in your supermarket with our specialized cleaning services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="600">
-        <h4>Carpet & Upholstery Shampooing</h4>
+      <div data-aos="fade-up" data-aos-delay="800">
+        <h4><i class="fas fa-couch"></i> Carpet & Upholstery Shampooing</h4>
         <p>Revive your carpets and upholstery with our deep cleaning and shampooing services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="700">
-        <h4>Marble Floor Polishing</h4>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h4><i class="fas fa-swatchbook"></i> Marble Floor Polishing</h4>
         <p>Enhance the shine of your marble floors with our polishing services.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="800">
-        <h4>Glass Cleaning (Low Level)</h4>
+      <div data-aos="fade-up" data-aos-delay="1000">
+        <h4><i class="fas fa-window-maximize"></i> Glass Cleaning (Low Level)</h4>
         <p>We provide expert glass cleaning services, including windows, doors, and more.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="900">
-        <h4>Housekeeping Services</h4>
+      <div data-aos="fade-up" data-aos-delay="1100">
+        <h4><i class="fas fa-broom"></i> Housekeeping Services</h4>
         <p>We offer a variety of housekeeping services tailored to your needs.</p>
       </div>
     </div>
-
-    <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+    <div class="contact-info" data-aos="fade-left" data-aos-delay="1200">
       <h3>Contact Information</h3>
       <div class="contact-item"><span>Phone</span> 0563197583 / 0529345738</div>
-      <div class="contact-item"><span>Email</span> <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a></div>
-      <div class="contact-item"><span>Address</span> Dar Al Salam Building, Al Marakib Street, P.O Box 3113, Abu Dhabi, UAE</div>
+      <div class="contact-item">
+        <span>Email</span>
+        <a href="mailto:lavserlucranservices@gmail.com">lavserlucranservices@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span>Address</span> Dar Al Salam Building, Al Marakib Street, P.O Box 3113, Abu Dhabi, UAE
+      </div>
     </div>
   </main>
-
   <footer>
     <p>&copy; 2025 LAVSERLUCRAN CLEANING AND HOSPITALITY SERVICES L.L.C - S.P.C</p>
   </footer>
 
-  <a href="https://wa.me/971563197583" target="_blank" class="whatsapp-button">
+  <!-- WhatsApp Chat Button -->
+  <a
+    href="https://wa.me/971563197583"
+    target="_blank"
+    style="
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      font-size: 1em;
+      z-index: 1000;
+    "
+  >
     Chat with us on WhatsApp
   </a>
 
-  <!-- AOS Library -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
   </script>
 </body>
 </html>
