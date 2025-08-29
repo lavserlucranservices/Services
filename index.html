@@ -13,6 +13,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
   <style>
+    /* BASE STYLES */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -56,6 +57,8 @@
     main {
       padding: 40px 20px;
       text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
     }
     h2 {
       font-size: 2.5em;
@@ -75,15 +78,13 @@
       font-family: 'Poppins', sans-serif;
       margin-bottom: 20px;
     }
+    /* SERVICES */
     .service-box {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 30px;
       gap: 30px;
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
     }
     .service-box div {
       background: linear-gradient(135deg, #3498db, #1abc9c);
@@ -97,20 +98,29 @@
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
     }
     .service-box div:hover {
       transform: translateY(-8px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
-    .service-box div h4 {
-      margin-top: 0;
-      font-size: 1.3em;
-      margin-bottom: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
+    /* Animation delays for services */
+    .service-box div:nth-child(1) { animation-delay: 0.3s; }
+    .service-box div:nth-child(2) { animation-delay: 0.5s; }
+    .service-box div:nth-child(3) { animation-delay: 0.7s; }
+    .service-box div:nth-child(4) { animation-delay: 0.9s; }
+    .service-box div:nth-child(5) { animation-delay: 1.1s; }
+    .service-box div:nth-child(6) { animation-delay: 1.3s; }
+    .service-box div:nth-child(7) { animation-delay: 1.5s; }
+    .service-box div:nth-child(8) { animation-delay: 1.7s; }
+    .service-box div:nth-child(9) { animation-delay: 1.9s; }
+
+    /* CONTACT INFO */
     .contact-info {
       margin: 50px auto;
       max-width: 700px;
@@ -120,6 +130,13 @@
       border-radius: 12px;
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
       text-align: left;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+      animation-delay: 2.2s;
     }
     .contact-info h3 {
       margin-top: 0;
@@ -150,12 +167,21 @@
     .contact-item a:hover {
       color: #3498db;
     }
+
+    /* FOOTER */
     footer {
       background: #1a3c6a;
       color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+      animation-delay: 2.5s;
     }
     footer p {
       margin: 5px 0;
@@ -168,6 +194,34 @@
     footer a:hover {
       color: white;
     }
+
+    /* HEADER, NAV, MAIN ANIMATIONS */
+    header, nav, main {
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+    }
+    header {
+      animation-delay: 0.2s;
+    }
+    nav {
+      animation-delay: 0.4s;
+    }
+    main {
+      animation-delay: 0.6s;
+    }
+
+    /* KEYFRAMES */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .service-box div {
@@ -238,34 +292,42 @@
       </div>
       <div>
         <h4><i class="fas fa-swatchbook"></i> Marble Floor Polishing</h4>
-        <p>Enhance the shine and durability of your marble floors with professional polishing.</p>
+        <p>Keep your marble floors shining with our expert polishing service.</p>
       </div>
       <div>
-        <h4><i class="fas fa-mitten"></i> Hand Cleaning & Sanitizing</h4>
-        <p>Keep your hands and surfaces clean with our sanitizing services.</p>
+        <h4><i class="fas fa-tools"></i> Building Maintenance</h4>
+        <p>General building maintenance services to keep your property in excellent condition.</p>
       </div>
       <div>
-        <h4><i class="fas fa-trash"></i> Waste Collection</h4>
-        <p>Efficient and timely waste collection to maintain cleanliness and hygiene.</p>
+        <h4><i class="fas fa-truck"></i> Transportation Services</h4>
+        <p>Reliable transportation services for your cleaning equipment and team.</p>
       </div>
     </div>
 
-    <section class="contact-info">
-      <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+    <div class="contact-info">
+      <h3><i class="fas fa-phone"></i> Contact Us</h3>
       <div class="contact-item">
-        <span>Phone:</span> <a href="tel:+971123456789">+971 12 345 6789</a>
+        <span>Phone:</span>
+        <a href="tel:+971555555555">+971 55 555 5555</a>
       </div>
       <div class="contact-item">
-        <span>Email:</span> <a href="mailto:info@lavserlucran.com">info@lavserlucran.com</a>
+        <span>Email:</span>
+        <a href="mailto:info@lavserlucran.com">info@lavserlucran.com</a>
       </div>
       <div class="contact-item">
-        <span>Address:</span> P.O. Box 12345, Abu Dhabi, UAE
+        <span>Address:</span>
+        <p>Office 101, Business Tower, Dubai, UAE</p>
       </div>
-    </section>
+      <div class="contact-item">
+        <span>Follow us:</span>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i> Facebook</a> | 
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES | All Rights Reserved</p>
-    <p>Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.</p>
+    <p>Follow us on <a href="#" aria-label="Facebook">Facebook</a> and <a href="#" aria-label="Instagram">Instagram</a>.</p>
   </footer>
 </body>
 </html>
