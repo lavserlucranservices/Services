@@ -1,47 +1,187 @@
-<div class="service-box">
-  <div data-aos="fade-up" data-aos-delay="200">
-    <img src="icons/guestroom.png" alt="Guestroom Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Guestroom Deep Cleaning</h4>
-    <p>Thorough cleaning for guest rooms to ensure a welcoming and hygienic environment.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="300">
-    <img src="icons/shop.png" alt="Shop Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Shops Deep Cleaning</h4>
-    <p>Comprehensive cleaning for retail spaces, ensuring they’re pristine for your customers.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="400">
-    <img src="icons/office.png" alt="Office Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Offices Deep Cleaning</h4>
-    <p>Maintain a clean and professional workspace with our office cleaning services.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="500">
-    <img src="icons/villa.png" alt="Villa Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Villa Deep Cleaning</h4>
-    <p>Luxury cleaning services for villas, ensuring every corner is spotless.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="600">
-    <img src="icons/supermarket.png" alt="Supermarket Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Supermarket Deep Cleaning</h4>
-    <p>Ensure hygiene and cleanliness in your supermarket with specialized cleaning services.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="700">
-    <img src="icons/carpet.png" alt="Carpet Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Carpet & Upholstery Shampooing</h4>
-    <p>Revive your carpets and upholstery with deep cleaning and shampooing services.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="800">
-    <img src="icons/marble.png" alt="Marble Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Marble Floor Polishing</h4>
-    <p>Enhance the shine of your marble floors with our polishing services.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="900">
-    <img src="icons/glass.png" alt="Glass Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Glass Cleaning (Low Level)</h4>
-    <p>Expert glass cleaning services including windows, doors, and more.</p>
-  </div>
-  <div data-aos="fade-up" data-aos-delay="1000">
-    <img src="icons/housekeeping.png" alt="Housekeeping Icon" style="width:50px; margin-bottom:15px;">
-    <h4>Housekeeping Services</h4>
-    <p>Variety of housekeeping services tailored to your needs.</p>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - LAVSER LUCRAN CLEANING</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #1a3c6a, #14532d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 1px;
+      font-family: 'Poppins', sans-serif;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+    nav {
+      background: #14532d;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #a0d0c0;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: #1a3c6a;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 1.8em;
+      color: #14532d;
+      margin-top: 30px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      animation: fadeInDown 1s ease forwards;
+    }
+    p {
+      animation: fadeInUp 1s ease forwards;
+      max-width: 900px;
+      margin: 10px auto 30px;
+      color: #555;
+      font-size: 1.2em;
+      text-align: left;
+    }
+    .services-section {
+      background-color: #fff;
+      margin: 30px auto;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      text-align: left;
+    }
+    footer {
+      background: #1a3c6a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: #a0d0c0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer a:hover {
+      color: white;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES</h1>
+    <p>Providing Quality Cleaning Solutions for Homes & Businesses</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Services Section -->
+    <section class="services-section">
+      <h3>
+        <i class="fas fa-concierge-bell" style="color:#1a3c6a"></i> Our Services
+      </h3>
+      <p>At Lavser Lucran Cleaning and Hospitality Services, we offer a wide range of services designed to meet the unique needs of our clients. Our team is dedicated to providing high-quality solutions that ensure your spaces are clean, comfortable, and welcoming.</p>
+
+      <h3>Our Cleaning Services Include:</h3>
+      <ul>
+        <li>Residential Cleaning</li>
+        <li>Commercial Cleaning</li>
+        <li>Deep Cleaning</li>
+        <li>Post-Construction Cleaning</li>
+        <li>Move-In/Move-Out Cleaning</li>
+      </ul>
+
+      <h3>Our Hospitality Services Include:</h3>
+      <ul>
+        <li>Event Planning & Management</li>
+        <li>Housekeeping</li>
+        <li>Hotel/Resort Maintenance</li>
+      </ul>
+
+      <h3>Eco-Friendly Cleaning Solutions:</h3>
+      <ul>
+        <li>Green Cleaning Products</li>
+        <li>Water Conservation Methods</li>
+        <li>Recycling & Waste Reduction</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LAVSER LUCRAN CLEANING AND HOSPITALITY SERVICES | All Rights Reserved</p>
+    <p>
+      Follow us on <a href="#">Facebook</a> and <a href="#">Instagram</a>.
+    </p>
+  </footer>
+</body>
+</html>
